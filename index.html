@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <header class="header">
+        <h1 id="title" class="text-center">Survey Form</h1>
+        <p id="description" class="description text-center">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </header>
+
+    <form id="survey-form" action="#" method="post">
+
+
+        <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>Which option best describes your current role?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select current role</option>
+        <option value="student">Student</option>
+        <option value="job">Full Time Job</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Where did you hear about us?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="linkedin"
+          type="radio"
+          class="input-radio"
+          checked
+        />Linkedin</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="instagram"
+          type="radio"
+          class="input-radio"
+        />Instagram</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="Job-Board"
+          type="radio"
+          class="input-radio"
+        />Job Board</label
+      >
+    </div>
+
+    
+    <div class="form-group">
+      <p>
+        What languages are you fluent in?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="c++"
+          type="checkbox"
+          class="input-checkbox"
+        />C++</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="java"
+          type="checkbox"
+          class="input-checkbox"
+        />Java</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="javascript"
+          type="checkbox"
+          class="input-checkbox"
+        />Javascript</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="ruby"
+          type="checkbox"
+          class="input-checkbox"
+        />Ruby</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="go"
+          type="checkbox"
+          class="input-checkbox"
+        />Go</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="python"
+          type="checkbox"
+          class="input-checkbox"
+        />Python</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="c"
+          type="checkbox"
+          class="input-checkbox"
+        />C</label
+      >
+      
+      <label
+        ><input
+          name="prefer"
+          value="php"
+          type="checkbox"
+          class="input-checkbox"
+        />PHP</label
+      >
+      
+      
+    </div>
+
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+
+    
+</body>
+</html>
